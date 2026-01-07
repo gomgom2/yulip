@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 :root {
-    --nav-gap: 4.5rem;
+    --nav-gap: 6rem;
     /* 메뉴 간 간격 (적당히 여유 있게) */
     --header-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
     /* 살짝만 보이는 섀도우 */
@@ -151,8 +151,9 @@ body.dark-hero .site-header:hover .right-button a {
 
 .menu>li>button {
     display: inline-block;
-    font-size: 1rem;
-    font-weight: 900;
+    font-family: Presentation;
+    font-size: 1.1rem;
+    font-weight: 700;
     line-height: 1.2;
     background: none;
     border: 0;
@@ -243,8 +244,9 @@ ul.submenu {
 
 .submenu a {
     display: block;
-    font-size: .8rem;
-    font-weight: 800;
+    font-family: Presentation;
+    font-size: .9rem;
+    font-weight: 500;
     color: #333;
     padding: 3px 0;
 }
