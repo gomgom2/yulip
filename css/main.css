@@ -2,6 +2,7 @@
 
 :root {
     --max-width-contents: 1000px;
+    --main-color: #F7590C;
 }
 
 section.hero {
@@ -81,4 +82,14 @@ section.introduce {
     height: auto;
     display: block;
     transform: translateY(40%);
+}
+
+.lawyer-position {
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.lawyer-name {
+    font-size: 1.2rem;
+    font-weight: 400;
 }
