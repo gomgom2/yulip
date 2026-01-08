@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body class="dark-hero">
+<body>
 
     <header class="site-header">
         <div class="nav-wrap">
-            <div class="logo"><a href="index.html">중부가족 2026 웹진</a></div>
+            <div class="logo"><a href="index.html">법무법인 율립</a></div>
 
             <!-- 데스크탑 네비 -->
             <nav class="main-nav" aria-label="주요 메뉴">
@@ -24,12 +24,12 @@
                     <li role="none">
                         <button type="button" aria-haspopup="menu" aria-expanded="false"
                             aria-controls="submenu-introduce" role="menuitem">
-                            법인소개
+                            율립 소개
                         </button>
                         <ul id="submenu-introduce" class="submenu" role="menu" aria-label="Yulip's intro menu">
-                            <li role="none"><a role="menuitem" href="#">인사말</a></li>
                             <li role="none"><a role="menuitem" href="#">구성원</a></li>
-                            <li role="none"><a role="menuitem" href="#">찾아오는 길</a></li>
+                            <li role="none"><a role="menuitem" href="#">목록</a></li>
+                            <li role="none"><a role="menuitem" href="#">각 페이지</a></li>
                         </ul>
                     </li>
 
@@ -39,7 +39,7 @@
                             업무분야
                         </button>
                         <ul id="submenu-field" class="submenu" role="menu" aria-label="Yulip's Field menu">
-                            <li role="none"><a role="menuitem" href="#">송무(민사,형사,가사,행정)</a></li>
+                            <li role="none"><a role="menuitem" href="#">송무</a></li>
                             <li role="none"><a role="menuitem" href="#">자문</a></li>
                             <li role="none"><a role="menuitem" href="#">노동</a></li>
                             <li role="none"><a role="menuitem" href="#">교육</a></li>
@@ -50,7 +50,7 @@
                     <li role="none">
                         <button type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="submenu-case"
                             role="menuitem">
-                            성공사례
+                            업무사례
                         </button>
                         <!-- <ul id="submenu-case" class="submenu" role="menu" aria-label="Yulip's Case menu">
                             <li role="none"><a role="menuitem" href="#"></a></li>
@@ -59,32 +59,26 @@
                     <li role="none">
                         <button type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="submenu-forum"
                             role="menuitem">
-                            율립소식
+                            소식/자료
                         </button>
                         <ul id="submenu-forum" class="submenu" role="menu" aria-label="Yulip's Forum menu">
+                            <li role="none"><a role="menuitem" href="#">공지사항</a></li>
                             <li role="none"><a role="menuitem" href="#">언론보도</a></li>
-                            <li role="none"><a role="menuitem" href="#">칼럼</a></li>
+                            <li role="none"><a role="menuitem" href="#">발표자료</a></li>
                         </ul>
                     </li>
                     <li role="none">
                         <button type="button" aria-haspopup="menu" aria-expanded="false"
                             aria-controls="submenu-institute" role="menuitem">
-                            헌법연구소
+                            입법지원센터
                         </button>
-                    </li>
-                    <li role="none">
-                        <button type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="submenu-notice"
-                            role="menuitem">
-                            공지사항
-                        </button>
+                        <ul id="submenu-institute" class="submenu" role="menu" aria-label="Yulip's Institute menu">
+                            <li role="none"><a role="menuitem" href="#">입법지원센터 소개</a></li>
+                            <li role="none"><a role="menuitem" href="#">입법지원센터 소식</a></li>
+                        </ul>
                     </li>
                 </ul>
             </nav>
-
-            <!-- <div class="header-right">
-                <span class="right-button"><a href="#">지난호보기</a></span>
-                <span class="right-button"><a href="#">PDF 보기</a></span>
-            </div> -->
 
             <button class="hamburger" aria-label="메뉴 열기" aria-controls="drawer" aria-expanded="false">
                 <span></span><span></span><span></span>
@@ -94,49 +88,127 @@
         <!-- 모바일 드로어: ❗️전부 펼친 구조 (버튼/아코디언 없음) -->
         <aside id="drawer" class="drawer" aria-hidden="true" aria-label="모바일 메뉴" tabindex="-1">
             <div class="drawer-header">
-                <strong class="drawer-title">중부가족 2026 웹진</strong>
+                <strong class="drawer-title">법무법인 율립</strong>
                 <button class="drawer-close" aria-label="메뉴 닫기">×</button>
             </div>
 
             <nav class="mnav" aria-label="모바일 주요 메뉴">
-                <section class="mnav-section" aria-labelledby="mnav-trend">
-                    <h3 id="mnav-trend" class="mnav-title">KOMIPO Crew</h3>
+                <section class="mnav-section" aria-labelledby="mnav-introduce">
+                    <h3 id="mnav-introduce" class="mnav-title">율립 소개</h3>
                     <ul class="mnav-list">
-                        <li><a role="menuitem" href="#">Intro</a></li>
-                        <li><a role="menuitem" href="#">Idea & Movement</a></li>
-                        <li><a role="menuitem" href="#">Crew Special</a></li>
-                        <li><a role="menuitem" href="#">Issue & Trend</a></li>
+                        <li><a role="menuitem" href="#">구성원</a></li>
+                        <li><a role="menuitem" href="#">목록</a></li>
+                        <li><a role="menuitem" href="#">각 페이지</a></li>
                     </ul>
                 </section>
 
-                <section class="mnav-section" aria-labelledby="mnav-skill">
-                    <h3 id="mnav-skill" class="mnav-title">KOMIPO’s Hands</h3>
+                <section class="mnav-section" aria-labelledby="mnav-field">
+                    <h3 id="mnav-field" class="mnav-title">업무분야</h3>
                     <ul class="mnav-list">
-                        <li role="none"><a role="menuitem" href="#">KOMIPO’s Kick</a></li>
-                        <li role="none"><a role="menuitem" href="#">Live-Laugh KOMIPO 1</a></li>
-                        <li role="none"><a role="menuitem" href="#">Live-Laugh KOMIPO 2</a></li>
-                        <li role="none"><a role="menuitem" href="#">PROJECT An-Nyeong</a></li>
-                        <li role="none"><a role="menuitem" href="#">An-Nyeong ON/OFF</a></li>
+                        <li role="none"><a role="menuitem" href="#">송무</a></li>
+                        <li role="none"><a role="menuitem" href="#">자문</a></li>
+                        <li role="none"><a role="menuitem" href="#">노동</a></li>
+                        <li role="none"><a role="menuitem" href="#">교육</a></li>
+                        <li role="none"><a role="menuitem" href="#">공익</a></li>
                     </ul>
                 </section>
 
-                <section class="mnav-section" aria-labelledby="mnav-life">
-                    <h3 id="mnav-life" class="mnav-title">KOMIPO’s Hands</h3>
+                <section class="mnav-section" aria-labelledby="mnav-case">
+                    <h3 id="mnav-case" class="mnav-title">업무사례</h3>
+                    <!-- <ul class="mnav-list">
+                        <li role="none"><a role="menuitem" href="#"></a></li>
+                    </ul> -->
+                </section>
+                <section class="mnav-section" aria-labelledby="mnav-forum">
+                    <h3 id="mnav-forum" class="mnav-title">소식/자료</h3>
                     <ul class="mnav-list">
-                        <li role="none"><a role="menuitem" href="#">KOMIPO’s Hands</a></li>
-                        <li role="none"><a role="menuitem" href="#">KOMIPO’s Item</a></li>
-                        <li role="none"><a role="menuitem" href="#">Inside KOMIPO 1</a></li>
-                        <li role="none"><a role="menuitem" href="#">Inside KOMIPO 2</a></li>
-                        <li role="none"><a role="menuitem" href="#">KOMIPO One Crew</a></li>
-                        <li role="none"><a role="menuitem" href="#">KOMIPO News</a></li>
-                        <li role="none"><a role="menuitem" href="#">Family KOMIPO</a></li>
+                        <li role="none"><a role="menuitem" href="#">공지사항</a></li>
+                        <li role="none"><a role="menuitem" href="#">언론보도</a></li>
+                        <li role="none"><a role="menuitem" href="#">발표자료</a></li>
+                    </ul>
+                </section>
+                <section class="mnav-section" aria-labelledby="mnav-institute">
+                    <h3 id="mnav-institute" class="mnav-title">입법지원센터</h3>
+                    <ul class="mnav-list">
+                        <li role="none"><a role="menuitem" href="#">입법지원센터 소개</a></li>
+                        <li role="none"><a role="menuitem" href="#">입법지원센터 소식</a></li>
                     </ul>
                 </section>
             </nav>
         </aside>
     </header>
 
+    <main>
+        <section class="hero">
+            <div class="hero-wrap">
+                <div class="hero-content">
+                    <p>
+                        “Upholding the Law, Honoring Human Dignity.”<br>
+                        사람의 존엄과 가치를 지키는 법을 지향합니다.
+                    </p>
+                    <h1>律立</h1>
+                    <p>
+                        법의 해석, 적용을 넘어 입법적 대안까지 함께 모색합니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="introduce">
+            <div class="intro-wrap">
+                <h2 class="section-title">구성원</h2>
+                <div class="lawyers-grid">
+                    <div class="lawyer-card">
+                        <div class="lawyer-photo">
+                            <img src="photos/main_lawyer_01.png" alt="변호사 사진">
+                        </div>
+                        <div class="lawyer-info">
+                            <h3 class="lawyer-name">하주희</h3>
+                            <p class="lawyer-position">대표변호사</p>
+                        </div>
+                    </div>
+                    <div class="lawyer-card">
+                        <div class="lawyer-photo">
+                            <img src="photos/main_lawyer_01.png" alt="변호사 사진">
+                        </div>
+                        <div class="lawyer-info">
+                            <h3 class="lawyer-name">하주희</h3>
+                            <p class="lawyer-position">변호사</p>
+                        </div>
+                    </div>
+                    <div class="lawyer-card">
+                        <div class="lawyer-photo">
+                            <img src="photos/main_lawyer_01.png" alt="변호사 사진">
+                        </div>
+                        <div class="lawyer-info">
+                            <h3 class="lawyer-name">하주희</h3>
+                            <p class="lawyer-position">변호사</p>
+                        </div>
+                    </div>
+                    <div class="lawyer-card">
+                        <div class="lawyer-photo">
+                            <img src="photos/main_lawyer_01.png" alt="변호사 사진">
+                        </div>
+                        <div class="lawyer-info">
+                            <h3 class="lawyer-name">하주희</h3>
+                            <p class="lawyer-position">변호사</p>
+                        </div>
+                    </div>
+                    <div class="lawyer-card">
+                        <div class="lawyer-photo">
+                            <img src="photos/main_lawyer_01.png" alt="변호사 사진">
+                        </div>
+                        <div class="lawyer-info">
+                            <h3 class="lawyer-name">하주희</h3>
+                            <p class="lawyer-position">변호사</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <script src="js/nav.js"></script>
+
 </body>
 
 </html>
