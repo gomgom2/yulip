@@ -130,7 +130,7 @@ body.dark-hero .site-header {
 }
 
 .menu>li>button:hover {
-    color: #1166dd;
+    color: var(--main-color);
 }
 
 ul.submenu {
@@ -171,7 +171,7 @@ ul.submenu {
 }
 
 .submenu a:hover {
-    color: #1166dd;
+    color: var(--main-color)
 }
 
 
