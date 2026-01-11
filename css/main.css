@@ -2,13 +2,15 @@
 
 :root {
     --max-width-contents: 1000px;
+    --max-width-contents2: 800px;
     --main-color: #F7590C;
 }
 
 section.hero {
     width: 100%;
     height: 100vh;
-    background: var(--nav-bg-color);
+    background: url(../images/main_hero_bg.jpg) center center no-repeat;
+    background-size: cover;
 }
 
 .hero-wrap {
@@ -30,6 +32,7 @@ section.hero {
 
 .hero-content p {
     font-size: 1.8rem;
+    font-family: GounBatang;
 }
 
 .hero-content h1 {
@@ -41,7 +44,7 @@ section.hero {
 section.introduce {
     width: 100%;
     background: #D4B69A;
-    padding: 4rem 0
+    padding: 4rem 0 5rem 0;
 }
 
 .introduce .section-title {
@@ -92,4 +95,263 @@ section.introduce {
 .lawyer-name {
     font-size: 1.2rem;
     font-weight: 400;
+}
+
+section.case {
+    padding: 4rem 0 5rem 0;
+}
+
+.case .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.case-list {
+    width: 100%;
+    max-width: var(--max-width-contents);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.case-item {
+    border-top: 1.5px solid var(--main-color);
+    border-left: 1.5px solid var(--main-color);
+    padding: 2rem 0 0 2rem;
+    aspect-ratio: 1 / 1.2;
+    position: relative;
+}
+
+.case-category {
+    color: var(--main-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.case-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.case-date {
+    position: absolute;
+    bottom: 2rem;
+    font-size: 1rem;
+}
+
+section.institute {
+    width: 100%;
+    background: url('../images/main_institute_bg.jpg') no-repeat center bottom;
+    background-size: cover;
+    position: relative;
+    min-height: 36rem;
+}
+
+.institute::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.institute-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 36rem;
+    color: #fff;
+    z-index: 2;
+    position: relative;
+    text-align: center;
+}
+
+.institute h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.institute p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    max-width: 60rem;
+}
+
+.institute-link {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: -0.1rem;
+    text-decoration: none;
+    position: relative;
+}
+
+.institute-link:hover {
+    text-decoration: none;
+}
+
+.institute-link::after {
+    content: "→";
+    font-size: 2rem;
+    font-weight: 300;
+    position: absolute;
+    right: -2.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+}
+
+.institute-link:hover::after {
+    transform: translateX(5px) translateY(-50%);
+}
+
+.institute h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.institute-icon {
+    position: relative;
+    padding: 4rem 0 2rem 0;
+    z-index: 2;
+    width: 100%;
+}
+
+.institute-icon span {
+    width: 5%;
+    min-width: 80px;
+    aspect-ratio: 1 / 1;
+    display: block;
+    background: url(../images/main_institute_icon.png) 0 0 no-repeat;
+    background-size: contain;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.institute-icon::before {
+    content: '';
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    width: 45%;
+    height: 3px;
+    background: #fff;
+    z-index: 2;
+}
+
+.institute-icon::after {
+    content: '';
+    position: absolute;
+    bottom: 20%;
+    right: 0;
+    width: 45%;
+    height: 3px;
+    background: #fff;
+    z-index: 2;
+}
+
+section.press {
+    padding: 4rem 0 5rem 0;
+}
+
+.press-wrap {
+    width: 100%;
+    max-width: var(--max-width-contents);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: #f2f2f2;
+    padding: 2rem;
+}
+
+.press .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.press-list {
+    border-bottom: 0.01rem solid #000;
+}
+
+.press-list li {
+    list-style: none;
+    border-top: 0.01rem solid #000;
+}
+
+.press-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.2s;
+    padding: 1rem 0;
+}
+
+.press-link:hover {
+    text-decoration: none;
+    background-color: #f9f9f9;
+}
+
+.press-date {
+    width: 8rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: Paperozi;
+    letter-spacing: -0.05rem;
+}
+
+.press-author {
+    width: 8rem;
+    font-weight: 700;
+}
+
+.press-title {
+    flex: 1;
+}
+
+.press-icon {
+    font-size: 1rem;
+}
+
+.press-link {
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* 자식 요소인 아이콘의 기준점 */
+    padding-right: 40px;
+    /* 아이콘 공간 비워두기 */
+}
+
+/* 화살표 아이콘 구현 */
+.press-link::after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    width: 10px;
+    /* 화살표 크기 */
+    height: 10px;
+    /* 화살표 크기 */
+    border-top: 2px solid #333;
+    border-right: 2px solid #333;
+    transform: rotate(45deg);
+    /* 45도 회전시켜 화살표 모양 생성 */
+    transition: transform 0.3s ease;
+    /* 호버 효과를 위한 애니메이션 */
+}
+
+/* 마우스를 올렸을 때 화살표가 살짝 튀어나가는 효과 */
+.press-link:hover::after {
+    transform: rotate(45deg) translate(3px, -3px);
 }
