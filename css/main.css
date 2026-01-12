@@ -51,6 +51,7 @@ section.introduce {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 5rem;
+    font-weight: 400;
 }
 
 .lawyers-grid {
@@ -103,8 +104,9 @@ section.case {
 
 .case .section-title {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 4rem;
+    font-weight: 100;
 }
 
 .case-list {
@@ -294,8 +296,9 @@ section.press {
 
 .press .section-title {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
+    font-weight: 100;
 }
 
 .press-list {
