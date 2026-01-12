@@ -9,7 +9,7 @@
 section.hero {
     width: 100%;
     height: 100vh;
-    background: url(../images/main_hero_bg.jpg) center center no-repeat;
+    background: url(../images/main_hero_bg.jpg) center 30% no-repeat;
     background-size: cover;
 }
 
