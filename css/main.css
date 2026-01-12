@@ -116,6 +116,23 @@ section.case {
     gap: 2rem;
 }
 
+.case-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.case-link:hover {
+    text-decoration: none;
+}
+
+.case-link:hover .case-item {
+    border-color: #000;
+}
+
+.case-link:hover .case-category {
+    color: #000;
+}
+
 .case-item {
     border-top: 1.5px solid var(--main-color);
     border-left: 1.5px solid var(--main-color);
