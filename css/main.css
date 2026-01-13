@@ -9,8 +9,28 @@
 section.hero {
     width: 100%;
     height: 100vh;
-    background: url(../images/main_hero_bg.jpg) center 30% no-repeat;
-    background-size: cover;
+    /* background: url(../images/main_hero_bg.jpg) center 30% no-repeat;
+    background-size: cover; */
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.hero-bg video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
 }
 
 .hero-wrap {
@@ -33,6 +53,8 @@ section.hero {
 .hero-content p {
     font-size: 1.8rem;
     font-family: GounBatang;
+    color: #fefefe;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero-content h1 {
@@ -374,4 +396,58 @@ section.press {
 /* 마우스를 올렸을 때 화살표가 살짝 튀어나가는 효과 */
 .press-link:hover::after {
     transform: rotate(45deg) translate(3px, -3px);
+}
+
+@media (max-width: 768px) {
+
+    .hero-content p {
+        padding: 0 2rem 5rem;
+        word-break: keep-all;
+    }
+
+    section.case {
+        padding: 2rem 0 3rem 0;
+    }
+
+    .case .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .case-list {
+        grid-template-columns: 1fr;
+        padding: 0 2rem;
+    }
+
+    .case-item {
+        aspect-ratio: auto;
+        padding: 1rem 0 0.5rem 1.5rem;
+        border-width: 1px;
+    }
+
+    .case-description {
+        margin-bottom: 2rem;
+    }
+
+    .case-date {
+        position: relative;
+        bottom: auto;
+        margin-top: 1rem;
+    }
+
+    .press-link {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .footer-wrap {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: left;
+    }
+
+    .footer-contact {
+        text-align: left;
+    }
 }

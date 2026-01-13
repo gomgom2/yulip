@@ -178,10 +178,6 @@ ul.submenu {
 
 .hamburger {
     display: none;
-    width: 32px;
-    height: 18px;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .drawer {
@@ -208,4 +204,118 @@ ul.submenu {
 
 .footer-contact {
     text-align: right;
+}
+
+/* --- 모바일 레이아웃 설정 --- */
+
+@media (max-width: 1024px) {
+    .main-nav {
+        display: none;
+        /* 데스크탑 메뉴 숨김 */
+    }
+
+    .nav-wrap {
+        padding: 1rem;
+    }
+
+    .nav-wrap .logo a {
+        font-size: 1.4rem;
+    }
+
+    .hamburger {
+        display: flex;
+        /* 햄버거 버튼 표시 */
+        flex-direction: column;
+        justify-content: space-between;
+        width: 2rem;
+        height: 1rem;
+        z-index: 1001;
+    }
+
+    .hamburger span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: currentColor;
+        transition: all 0.3s;
+    }
+
+    /* 드로어(모바일 메뉴창) 스타일 */
+    .drawer {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        /* 기본적으로 화면 밖에 위치 */
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background: #fff;
+        z-index: 2000;
+        transition: right 0.3s ease;
+        padding: 2rem;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        color: #111;
+        overflow-y: auto;
+    }
+
+    .drawer.open {
+        right: 0;
+        /* 열렸을 때 화면 안으로 진입 */
+    }
+
+    .drawer-header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .drawer-title {
+        font-size: 1.2rem;
+        font-family: GounBatang;
+    }
+
+    .drawer-close {
+        font-size: 2rem;
+        line-height: 1;
+    }
+
+    /* 모바일 내부 메뉴 리스트 */
+    .mnav-section {
+        margin-bottom: 2rem;
+    }
+
+    .mnav-title {
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin-bottom: 0.8rem;
+        color: var(--main-color);
+    }
+
+    .mnav-list {
+        list-style: none;
+        padding-left: 0.5rem;
+    }
+
+    .mnav-list li {
+        margin-bottom: 0.5rem;
+    }
+
+    .mnav-list a {
+        font-size: 1rem;
+        color: #333;
+    }
+
+    /* 배경 어둡게 처리 (딤드) */
+    .drawer-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        /* z-index: 1999; */
+    }
+
+    .drawer.open+.drawer-overlay {
+        display: block;
+    }
 }
