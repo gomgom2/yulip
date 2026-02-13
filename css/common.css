@@ -3,7 +3,7 @@
 :root {
     --max-width: 1400px;
     --nav-gap: 4rem;
-    --nav-bg-color: #E1E1E1;
+    --nav-bg-color: #fff;
 }
 
 .mobile {
@@ -34,12 +34,13 @@
     width: 100%;
     isolation: isolate;
     z-index: 1000;
-    transition: background .28s ease, color .28s ease;
+    background-color: #fff;
+    /* transition: background .1s ease, color .1s ease; */
 }
 
 /* 기본(라이트) 페이지 */
 body:not(.dark-hero) .site-header {
-    background: transparent;
+    background: #fff;
     color: #111;
 }
 
@@ -75,7 +76,7 @@ body.dark-hero .site-header {
 }
 
 .site-header.mega-open::after {
-    height: 200px;
+    height: 280px;
 }
 
 /* 상단 바 레이아웃 */

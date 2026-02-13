@@ -3,7 +3,7 @@
 :root {
     --max-width-contents: 1000px;
     --max-width-contents2: 800px;
-    --main-color: #F7590C;
+    --main-color: #49848B;
 }
 
 section.hero {
@@ -303,6 +303,7 @@ section.institute {
 
 section.press {
     padding: 4rem 0 5rem 0;
+    background: #f2f2f2;
 }
 
 .press-wrap {
@@ -312,8 +313,6 @@ section.press {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    background: #f2f2f2;
-    padding: 2rem;
 }
 
 .press .section-title {
@@ -371,31 +370,118 @@ section.press {
     display: flex;
     align-items: center;
     position: relative;
-    /* 자식 요소인 아이콘의 기준점 */
     padding-right: 40px;
-    /* 아이콘 공간 비워두기 */
 }
 
-/* 화살표 아이콘 구현 */
 .press-link::after {
     content: "";
     position: absolute;
     right: 15px;
     width: 10px;
-    /* 화살표 크기 */
     height: 10px;
-    /* 화살표 크기 */
     border-top: 2px solid #333;
     border-right: 2px solid #333;
     transform: rotate(45deg);
-    /* 45도 회전시켜 화살표 모양 생성 */
     transition: transform 0.3s ease;
-    /* 호버 효과를 위한 애니메이션 */
 }
 
-/* 마우스를 올렸을 때 화살표가 살짝 튀어나가는 효과 */
 .press-link:hover::after {
     transform: rotate(45deg) translate(3px, -3px);
+}
+
+section.field {
+    padding: 4rem 0 8rem 0;
+}
+
+.field-wrap {
+    width: 100%;
+    max-width: var(--max-width-contents);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.field .section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 100;
+}
+
+.field-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.field-item {
+    list-style: none;
+    background: #6CBFC5;
+    padding: 1.5rem 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 0.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: background 0.3s ease;
+}
+
+.field-item.blue {
+    background: #55AADB;
+}
+
+.field-item h3.field-title {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.field-item p {
+    font-size: 0.8rem;
+    word-break: keep-all;
+}
+
+.field-item::before {
+    content: '';
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: url(../images/main_field_1.png) 0 0 no-repeat;
+    background-size: contain;
+}
+
+.field-item-2::before {
+    background-image: url(../images/main_field_2.png);
+}
+
+.field-item-3::before {
+    background-image: url(../images/main_field_3.png);
+}
+
+.field-item-4::before {
+    background-image: url(../images/main_field_4.png);
+}
+
+.field-item-5::before {
+    background-image: url(../images/main_field_5.png);
+}
+
+.field-item-6::before {
+    background-image: url(../images/main_field_6.png);
+}
+
+.field-item-7::before {
+    background-image: url(../images/main_field_7.png);
+}
+
+.field-item-8::before {
+    background-image: url(../images/main_field_8.png);
 }
 
 @media (max-width: 768px) {

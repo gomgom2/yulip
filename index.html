@@ -14,128 +14,7 @@
 
 <body>
 
-    <header class="site-header">
-        <div class="nav-wrap">
-            <div class="logo"><a href="index.html">법무법인 율립</a></div>
-
-            <!-- 데스크탑 네비 -->
-            <nav class="main-nav" aria-label="주요 메뉴">
-                <ul class="menu" role="menubar">
-                    <li role="none">
-                        <button type="button" aria-haspopup="menu" aria-expanded="false"
-                            aria-controls="submenu-introduce" role="menuitem">
-                            율립 소개
-                        </button>
-                        <ul id="submenu-introduce" class="submenu" role="menu" aria-label="Yulip's intro menu">
-                            <li role="none"><a role="menuitem" href="#">소개</a></li>
-                            <li role="none"><a role="menuitem" href="#">구성원</a></li>
-                        </ul>
-                    </li>
-
-                    <li role="none">
-                        <button type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="submenu-field"
-                            role="menuitem">
-                            업무분야
-                        </button>
-                        <ul id="submenu-field" class="submenu" role="menu" aria-label="Yulip's Field menu">
-                            <li role="none"><a role="menuitem" href="#">송무</a></li>
-                            <li role="none"><a role="menuitem" href="#">자문</a></li>
-                            <li role="none"><a role="menuitem" href="#">노동</a></li>
-                            <li role="none"><a role="menuitem" href="#">교육</a></li>
-                            <li role="none"><a role="menuitem" href="#">공익</a></li>
-                        </ul>
-                    </li>
-
-                    <li role="none">
-                        <button type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="submenu-case"
-                            role="menuitem">
-                            업무사례
-                        </button>
-                        <!-- <ul id="submenu-case" class="submenu" role="menu" aria-label="Yulip's Case menu">
-                            <li role="none"><a role="menuitem" href="#"></a></li>
-                        </ul> -->
-                    </li>
-                    <li role="none">
-                        <button type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="submenu-forum"
-                            role="menuitem">
-                            소식/자료
-                        </button>
-                        <ul id="submenu-forum" class="submenu" role="menu" aria-label="Yulip's Forum menu">
-                            <li role="none"><a role="menuitem" href="#">공지사항</a></li>
-                            <li role="none"><a role="menuitem" href="#">언론보도</a></li>
-                            <li role="none"><a role="menuitem" href="#">발표자료</a></li>
-                        </ul>
-                    </li>
-                    <li role="none">
-                        <button type="button" aria-haspopup="menu" aria-expanded="false"
-                            aria-controls="submenu-institute" role="menuitem">
-                            입법지원센터
-                        </button>
-                        <ul id="submenu-institute" class="submenu" role="menu" aria-label="Yulip's Institute menu">
-                            <li role="none"><a role="menuitem" href="#">입법지원센터 소개</a></li>
-                            <li role="none"><a role="menuitem" href="#">입법지원센터 소식</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-
-            <button class="hamburger" aria-label="메뉴 열기" aria-controls="drawer" aria-expanded="false">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-
-        <!-- 모바일 드로어: ❗️전부 펼친 구조 (버튼/아코디언 없음) -->
-        <aside id="drawer" class="drawer" aria-hidden="true" aria-label="모바일 메뉴" tabindex="-1">
-            <div class="drawer-header">
-                <!-- <strong class="drawer-title">법무법인 율립</strong> -->
-                <button class="drawer-close" aria-label="메뉴 닫기">×</button>
-            </div>
-
-            <nav class="mnav" aria-label="모바일 주요 메뉴">
-                <section class="mnav-section" aria-labelledby="mnav-introduce">
-                    <h3 id="mnav-introduce" class="mnav-title">율립 소개</h3>
-                    <ul class="mnav-list">
-                        <li><a role="menuitem" href="#">구성원</a></li>
-                        <li><a role="menuitem" href="#">목록</a></li>
-                        <li><a role="menuitem" href="#">각 페이지</a></li>
-                    </ul>
-                </section>
-
-                <section class="mnav-section" aria-labelledby="mnav-field">
-                    <h3 id="mnav-field" class="mnav-title">업무분야</h3>
-                    <ul class="mnav-list">
-                        <li role="none"><a role="menuitem" href="#">송무</a></li>
-                        <li role="none"><a role="menuitem" href="#">자문</a></li>
-                        <li role="none"><a role="menuitem" href="#">노동</a></li>
-                        <li role="none"><a role="menuitem" href="#">교육</a></li>
-                        <li role="none"><a role="menuitem" href="#">공익</a></li>
-                    </ul>
-                </section>
-
-                <section class="mnav-section" aria-labelledby="mnav-case">
-                    <h3 id="mnav-case" class="mnav-title">업무사례</h3>
-                    <!-- <ul class="mnav-list">
-                        <li role="none"><a role="menuitem" href="#"></a></li>
-                    </ul> -->
-                </section>
-                <section class="mnav-section" aria-labelledby="mnav-forum">
-                    <h3 id="mnav-forum" class="mnav-title">소식/자료</h3>
-                    <ul class="mnav-list">
-                        <li role="none"><a role="menuitem" href="#">공지사항</a></li>
-                        <li role="none"><a role="menuitem" href="#">언론보도</a></li>
-                        <li role="none"><a role="menuitem" href="#">발표자료</a></li>
-                    </ul>
-                </section>
-                <section class="mnav-section" aria-labelledby="mnav-institute">
-                    <h3 id="mnav-institute" class="mnav-title">입법지원센터</h3>
-                    <ul class="mnav-list">
-                        <li role="none"><a role="menuitem" href="#">입법지원센터 소개</a></li>
-                        <li role="none"><a role="menuitem" href="#">입법지원센터 소식</a></li>
-                    </ul>
-                </section>
-            </nav>
-        </aside>
-    </header>
+    <header class="site-header"></header>
 
     <main>
         <section class="hero">
@@ -182,12 +61,6 @@
         </section>
         <section class="institute">
             <div class="institute-wrap">
-                <h2>“법을 세우다”</h2>
-                <p>
-                    법무법인 율립은 법의 해석, 적용을 넘어 입법적 대안까지 함께 모색합니다.<br>
-                    개인의 권리 구제와 피해 회복은 물론, 사람의 가치가 더 소중하게 여겨지는 사회를 위한 법제도 개선방안을 함께 연구하고 모색합니다.<br>
-                    여럿이 함께 웃을 수 있는 미래를 위해, 법을 세우며 한걸음 더 나아갑니다.
-                </p>
                 <div class="institute-icon"><span></span></div>
                 <a href="#" class="institute-link">입법지원센터</a>
                 <h4>법의 해석, 적용을 넘어 입법적 대안까지 함께 모색합니다.</h4>
@@ -226,29 +99,54 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+        </section>
+        <section class="field">
+            <div class="field-wrap">
+                <h2 class="section-title">업무분야</h2>
+                <ul class="field-list">
+                    <li class="field-item field-item-1">
+                        <h3 class="field-title">분쟁해결</h3>
+                        <p class="field-description">법정에서 이루어지는 분쟁 해결에 최강점 체계적인 전략을 통해 고객의 권익을 최대한 보호</p>
+                    </li>
+                    <li class="field-item field-item-2 blue">
+                        <h3 class="field-title">헌법·행정</h3>
+                        <p class="field-description">사전 자문부터 행정심판, 행정소송, 집행정지 및 사후 관리에 이르기까지 전 과정을 체계적으로 지원</p>
+                    </li>
+                    <li class="field-item field-item-3">
+                        <h3 class="field-title">노동</h3>
+                        <p class="field-description">노동하는 현장에서 일어나는 제반 문제에 대해 상담 및 권리구제를 위한 소송을 진행</p>
+                    </li>
+                    <li class="field-item field-item-4 blue">
+                        <h3 class="field-title">상속·가사</h3>
+                        <p class="field-description">상속 분쟁, 유언·유류분, 상속 재산분할, 한정승인·상속포기 절차부터 이혼, 재산분할, 양육권·친권 분쟁</p>
+                    </li>
+                    <li class="field-item field-item-5 blue">
+                        <h3 class="field-title">부동산</h3>
+                        <p class="field-description">탄탄한 법리 지식을 바탕으로 부동산 거래의 시작부터 분쟁 해결까지 원스톱 솔루션을 제공</p>
+                    </li>
+                    <li class="field-item field-item-6">
+                        <h3 class="field-title">기업법무</h3>
+                        <p class="field-description">기업이 마주하는 법률문제에 대해 <br>실무 중심의 해석과 전략을 제공</p>
+                    </li>
+                    <li class="field-item field-item-7 blue">
+                        <h3 class="field-title">교육</h3>
+                        <p class="field-description">학교폭력 심의 대응, 헌법상의 교육기본권을 실현 기획소송, 사립대학교 교원 소청심사 등 풍부한 실무 경험</p>
+                    </li>
+                    <li class="field-item field-item-8">
+                        <h3 class="field-title">공익·인권</h3>
+                        <p class="field-description">인간의 존엄성을 옹호하고 더 나은 사회를 만들기 위한 공익적인 활동</p>
+                    </li>
+                </ul>
+            </div>
         </section>
 
     </main>
 
-    <footer class="site-footer">
-        <div class="footer-wrap">
-            <div class="footer-left">
-                <address class="footer-address">
-                    법무법인 율립<br>
-                    서울 서초구 서초중앙로28길 8, 5층(서초동, 형남빌딩)
-                </address>
-            </div>
-            <div class="footer-right">
-                <p class="footer-contact">
-                    02-6952-1194<br>
-                    AM 09:00~PM 06:00
-                </p>
-            </div>
-        </div>
-    </footer>
+    <footer class="site-footer"></footer>
 
 
-    <script src="js/nav.js"></script>
+    <script src="js/navi.js"></script>
 
 </body>
 
