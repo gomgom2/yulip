@@ -150,6 +150,10 @@ main {
     font-weight: 600;
 }
 
+.sub-left li.active {
+    font-weight: 600;
+}
+
 .sub-left li a:hover {
     text-decoration: none;
 }
@@ -197,4 +201,72 @@ main {
 
 .members-grid-in:hover {
     transform: translateY(-5%);
+}
+
+.members-container {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+}
+
+.members-container ul {
+    list-style: none;
+}
+
+.members-left figure {
+    padding: 5rem 5rem 0 5rem;
+    border-bottom: var(--sub-border)
+}
+
+.members-name {
+    padding: 1rem 7rem;
+}
+
+.members-name p {
+    font-size: 1.4rem;
+}
+
+.members-name p span {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.members-email {
+    font-size: 1.2rem;
+}
+
+.members-right {
+    border-left: var(--sub-border);
+    padding: 5rem 8rem 5rem 3rem;
+}
+
+.members-right div {
+    margin-bottom: 3rem;
+}
+
+.members-right h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.members-right li {
+    margin-bottom: 0.3rem;
+    position: relative;
+    padding-left: 0.8rem;
+}
+
+.members-right li::before {
+    content: "•";
+    font-weight: 100;
+    font-size: 0.9rem;
+    position: absolute;
+    left: 0;
+    top: 0rem;
+}
+
+.members-right .no-style li {
+    padding-left: 0;
+}
+
+.members-right .no-style li::before {
+    display: none;
 }
