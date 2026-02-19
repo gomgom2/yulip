@@ -111,7 +111,8 @@ main {
 }
 
 .members .sub-container,
-.map .sub-container {
+.map .sub-container,
+.fields .sub-container {
     max-width: var(--max-width-contents);
     margin: 0 auto;
     display: flex;
@@ -124,6 +125,11 @@ main {
     border-right: var(--sub-border);
     background-color: #fff;
     padding: 2rem 0 0 2rem;
+}
+
+.fields .sub-left {
+    padding-left: 4rem;
+    padding-top: 4rem;
 }
 
 .sub-right {
@@ -158,6 +164,7 @@ main {
 .sub-left li a:hover {
     text-decoration: none;
 }
+
 
 .members-grid {
     display: grid;
@@ -384,4 +391,121 @@ main {
 .map-box {
     aspect-ratio: 1 / 0.5;
     overflow: hidden;
+}
+
+.fields ul {
+    list-style: none;
+}
+
+.field-container {
+    display: flex;
+    border-bottom: var(--sub-border)
+}
+
+.field-left {
+    flex: 1;
+    border-right: var(--sub-border);
+    padding: 4rem;
+}
+
+.field-right {
+    flex: 0 0 20rem;
+    background-image: url(../contents/field_1.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+#field-2 .field-right {
+    background-image: url(../contents/field_2.jpg);
+}
+
+#field-3 .field-right {
+    background-image: url(../contents/field_3.jpg);
+}
+
+#field-4 .field-right {
+    background-image: url(../contents/field_4.jpg);
+}
+
+#field-5 .field-right {
+    background-image: url(../contents/field_5.jpg);
+}
+
+#field-6 .field-right {
+    background-image: url(../contents/field_6.jpg);
+}
+
+#field-7 .field-right {
+    background-image: url(../contents/field_7.jpg);
+}
+
+#field-8 .field-right {
+    background-image: url(../contents/field_8.jpg);
+}
+
+.field-left p {
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.field-box {
+    background: #61bfc5;
+    padding: 1.5rem 1.2rem;
+    color: #fff;
+    border-radius: 0.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 16rem;
+    word-break: keep-all;
+    margin-bottom: 2rem;
+}
+
+.field-box::before {
+    content: '';
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: url(../images/main_field_1.png) 0 0 no-repeat;
+    background-size: contain;
+}
+
+.field-box h4 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.field-box p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.field-list {
+    margin-top: 2.5rem;
+}
+
+.field-list h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.field-list li {
+    font-weight: 300;
+    line-height: 1.8;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.field-list li::before {
+    content: "•";
+    font-weight: 100;
+    font-size: 0.9rem;
+    position: absolute;
+    left: 0;
+    top: 0rem;
 }
