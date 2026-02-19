@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>법무법인 율립</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
+</head>
+
+<body>
+
+    <header class="site-header"></header>
+
+    <main>
+
+        <section class="map">
+            <div class="full-wrap">
+                <div class="sub-wrap title">
+                    <div class="sub-title">
+                        <h2>오시는 길</h2>
+                    </div>
+                </div>
+                <div class="sub-wrap">
+                    <div class="sub-container">
+                        <div class="sub-left">
+                        </div>
+                        <div class="sub-right white">
+                            <div class="map-container">
+                                <div class="map-box" id="map"></div>
+                                <div class="map-text">
+                                    <p class="map-info">서울 서초구 서초중앙로28길 8, 5층(서초동, 형남빌딩)</p>
+                                    <p class="map-phone">02-6952-1194</p>
+                                </div>
+                                <div class="map-access">
+                                    <div class="map-subway">
+                                        <h4>교대역(2,3호선) 6번출구</h4>
+                                        <p>도보 약 7분 6번 출구에서 직진, 엠씨지 치과의원에서 우회전 후 직진</p>
+                                    </div>
+                                    <div class="map-bus">
+                                        <h4>
+                                            서초10
+                                            <span>지선</span>
+                                            3420
+                                        </h4>
+                                    </div>
+                                    <div class="map-car">
+                                        <h4>서울 서초구 서초중앙로28길 8, 5층(서초동, 형남빌딩)</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer"></footer>
+
+
+    <script src="js/navi.js"></script>
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3435b3c8bf8866566726626924f34141"></script>
+    <script>
+        var container = document.getElementById('map');
+        var options = {
+            center: new kakao.maps.LatLng(33.450701, 126.570667),
+            level: 3
+        };
+
+        var map = new kakao.maps.Map(container, options);
+    </script>
+
+</body>
+
+</html>

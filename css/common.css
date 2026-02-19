@@ -78,6 +78,7 @@ body.dark-hero .site-header {
 
 .site-header.mega-open::after {
     height: 280px;
+    border-bottom: 0.01rem solid #6E6E71;
 }
 
 /* 상단 바 레이아웃 */

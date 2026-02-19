@@ -110,7 +110,8 @@ main {
     color: var(--title-color);
 }
 
-.members .sub-container {
+.members .sub-container,
+.map .sub-container {
     max-width: var(--max-width-contents);
     margin: 0 auto;
     display: flex;
@@ -270,4 +271,117 @@ main {
 
 .members-right .no-style li::before {
     display: none;
+}
+
+.map-text {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    gap: 3rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    justify-content: center;
+}
+
+.map-info {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.map-info::before {
+    content: "";
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url(../images/map-icon-info.png) 0 0 no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.map-phone {
+    position: relative;
+    padding-left: 2.5rem;
+}
+
+.map-phone::before {
+    content: "";
+    display: block;
+    width: 1.9rem;
+    height: 1.6rem;
+    background: url(../images/map-icon-phone.png) 0 0 no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.map-access {
+    width: 70%;
+    margin: 0 auto;
+    padding: 3rem 0 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.map-access div {
+    position: relative;
+    padding-left: 5rem
+}
+
+.map-access div h4 {
+    font-size: 1.5rem;
+}
+
+.map-access div p {
+    font-size: 1.2rem;
+}
+
+.map-access div.map-bus h4 {
+    display: flex;
+    align-items: center;
+}
+
+.map-access div.map-bus h4 span {
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 2rem;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    background-color: #65F84B;
+    margin-left: 1rem;
+    margin-right: 0.3rem;
+}
+
+.map-access div::before {
+    content: "";
+    display: block;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: url(../images/map-icon-subway.png) 0 0 no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.map-access div.map-bus::before {
+    background-image: url(../images/map-icon-bus.png);
+}
+
+.map-access div.map-car::before {
+    background-image: url(../images/map-icon-car.png);
+}
+
+.map-box {
+    aspect-ratio: 1 / 0.5;
+    overflow: hidden;
 }
