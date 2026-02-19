@@ -236,7 +236,7 @@ main {
 
 .members-right {
     border-left: var(--sub-border);
-    padding: 5rem 8rem 5rem 3rem;
+    padding: 5rem 4rem 5rem 3rem;
 }
 
 .members-right div {
@@ -252,6 +252,7 @@ main {
     margin-bottom: 0.3rem;
     position: relative;
     padding-left: 0.8rem;
+    word-break: keep-all;
 }
 
 .members-right li::before {
