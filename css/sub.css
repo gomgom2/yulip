@@ -110,7 +110,7 @@ main {
     color: var(--title-color);
 }
 
-.sub-container {
+.members .sub-container {
     max-width: var(--max-width-contents);
     margin: 0 auto;
     display: flex;
