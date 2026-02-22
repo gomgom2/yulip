@@ -336,6 +336,8 @@ section.press {
     align-items: center;
     text-decoration: none;
     color: #333;
+    position: relative;
+    padding-right: 40px;
     transition: background 0.2s;
     padding: 1rem 0;
 }
@@ -366,12 +368,7 @@ section.press {
     font-size: 1rem;
 }
 
-.press-link {
-    display: flex;
-    align-items: center;
-    position: relative;
-    padding-right: 40px;
-}
+
 
 .press-link::after {
     content: "";
@@ -486,6 +483,26 @@ section.field {
 
 @media (max-width: 768px) {
 
+    section.hero {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 16;
+    }
+
+    .hero-bg video {
+        position: absolute;
+        top: 120px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .hero-wrap {
+        display: none;
+    }
+
     .hero-content p {
         padding: 0 2rem 5rem;
         word-break: keep-all;
@@ -521,16 +538,47 @@ section.field {
         margin-top: 1rem;
     }
 
+    .institute-icon::before,
+    .institute-icon::after {
+        width: 35%;
+    }
+
+    .institute h4 {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        word-break: keep-all;
+    }
+
+    .press-list {
+        padding: 0 1.5rem;
+        border: none;
+    }
+
     .press-link {
         flex-direction: column;
         align-items: flex-start;
         gap: 0.5rem;
+        padding-right: 10px;
+    }
+
+    .press-link::after {
+        top: 25px;
+        right: 5px;
+    }
+
+
+    .field-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 0 1.5rem;
     }
 
     .footer-wrap {
         flex-direction: column;
         gap: 1.5rem;
         text-align: left;
+        padding: 0 0.5rem;
     }
 
     .footer-contact {
