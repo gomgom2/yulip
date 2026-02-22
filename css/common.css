@@ -321,4 +321,15 @@ ul.submenu {
     .drawer.open+.drawer-overlay {
         display: block;
     }
+
+    .footer-wrap {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: left;
+        padding: 0 0.5rem;
+    }
+
+    .footer-contact {
+        text-align: left;
+    }
 }

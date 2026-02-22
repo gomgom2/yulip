@@ -726,3 +726,116 @@ main {
     font-size: 0.9rem;
     text-align: right;
 }
+
+@media (max-width: 768px) {
+    main {
+        padding-top: 66px;
+    }
+
+    .about .sub-container {
+        width: 80%;
+    }
+
+    .sub-title {
+        border: none;
+        display: block;
+    }
+
+    .sub-title h2 {
+        text-align: center;
+        border-right: none;
+        padding: 1.5rem 0;
+    }
+
+    .members .sub-container,
+    .fields .sub-container,
+    .institute .sub-container {
+        display: block;
+        border: none
+    }
+
+    .members .sub-left,
+    .map .sub-left,
+    .fields .sub-left,
+    .institute .sub-left {
+        display: none;
+    }
+
+    .members-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 1.5rem;
+        gap: 1rem;
+    }
+
+    .members-grid-in p {
+        line-height: 1.2;
+    }
+
+    .members-grid-in p span {
+        display: block;
+    }
+
+    .members-container {
+        display: block;
+    }
+
+    .members-right {
+        border-left: none;
+        padding: 3rem 2rem 3rem 2rem;
+    }
+
+    .map-text {
+        display: block;
+        font-size: 1rem;
+    }
+
+    .map-info,
+    .map-phone {
+        padding-left: 2rem;
+    }
+
+    .map-info::before {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .map-phone::before {
+        width: 1.2rem;
+        height: 1rem;
+    }
+
+    .map-access {
+        width: 100%;
+        padding: 3rem 2rem 5rem;
+    }
+
+    .field-left {
+        border-right: none;
+        padding: 4rem 2rem;
+    }
+
+    .field-right {
+        display: none;
+    }
+
+    .institute-wrap {
+        padding-bottom: 2rem;
+    }
+
+    .institute-icon::before,
+    .institute-icon::after {
+        width: 35%;
+    }
+
+    .institute-top p {
+        padding: 0 2rem;
+        line-height: 1.5;
+        word-break: keep-all;
+    }
+
+    .institute-container {
+        padding: 4rem 2rem;
+    }
+
+
+}
