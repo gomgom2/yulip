@@ -283,7 +283,7 @@ main {
 }
 
 .map-text {
-    background-color: #000;
+    background-color: #999;
     color: #fff;
     display: flex;
     gap: 3rem;
@@ -374,7 +374,10 @@ main {
     display: block;
     width: 3.5rem;
     height: 3.5rem;
-    background: url(../images/map-icon-subway.png) 0 0 no-repeat;
+    border-radius: 50%;
+    background-color: #999;
+    background-image: url(../images/map-icon-subway.png);
+    background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
     left: 0;
@@ -552,8 +555,7 @@ main {
 }
 
 .institute-icon span {
-    width: 5%;
-    min-width: 50px;
+    width: 5rem;
     aspect-ratio: 1 / 1;
     display: block;
     background: url(../images/main_institute_icon.png) 0 0 no-repeat;
