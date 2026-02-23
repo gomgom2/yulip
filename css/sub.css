@@ -415,12 +415,12 @@ main {
 
 .field-right {
     flex: 0 0 20rem;
-    background-image: url(../contents/field_1.jpg);
+    /* background-image: url(../contents/field_1.jpg);
     background-position: center center;
-    background-size: cover;
+    background-size: cover; */
 }
 
-#field-2 .field-right {
+/* #field-2 .field-right {
     background-image: url(../contents/field_2.jpg);
 }
 
@@ -446,7 +446,7 @@ main {
 
 #field-8 .field-right {
     background-image: url(../contents/field_8.jpg);
-}
+} */
 
 .field-left p {
     font-weight: 300;
