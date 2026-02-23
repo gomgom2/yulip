@@ -409,48 +409,19 @@ main {
 
 .field-left {
     flex: 1;
-    border-right: var(--sub-border);
     padding: 4rem;
 }
 
-.field-right {
-    flex: 0 0 20rem;
-    /* background-image: url(../contents/field_1.jpg);
-    background-position: center center;
-    background-size: cover; */
-}
-
-/* #field-2 .field-right {
-    background-image: url(../contents/field_2.jpg);
-}
-
-#field-3 .field-right {
-    background-image: url(../contents/field_3.jpg);
-}
-
-#field-4 .field-right {
-    background-image: url(../contents/field_4.jpg);
-}
-
-#field-5 .field-right {
-    background-image: url(../contents/field_5.jpg);
-}
-
-#field-6 .field-right {
-    background-image: url(../contents/field_6.jpg);
-}
-
-#field-7 .field-right {
-    background-image: url(../contents/field_7.jpg);
-}
-
-#field-8 .field-right {
-    background-image: url(../contents/field_8.jpg);
-} */
 
 .field-left p {
     font-weight: 300;
     line-height: 1.8;
+    max-width: 800px;
+    word-break: keep-all;
+}
+
+.field-left ul {
+    max-width: 620px;
 }
 
 .field-box {
