@@ -594,6 +594,7 @@ body.dark-mode {
 
 .dark-mode .case-description {
     color: #e0e0e0;
+    padding-right: 1.5rem;
 }
 
 .dark-mode section.press {
