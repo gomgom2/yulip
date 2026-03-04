@@ -576,3 +576,110 @@ section.field {
     }
 
 }
+
+/* 다크모드 강제 적용 시 스타일 */
+body.dark-mode {
+    background-color: #000;
+    color: #e0e0e0;
+}
+
+.dark-mode section.case {
+    background-color: #000;
+}
+
+.dark-mode .case-item {
+    border-color: var(--main-color);
+    background: #1e1e1e;
+}
+
+.dark-mode .case-description {
+    color: #e0e0e0;
+}
+
+.dark-mode section.press {
+    background-color: #1a1a1a;
+}
+
+.dark-mode .press-list,
+.dark-mode .press-list li {
+    border-color: #444;
+}
+
+.dark-mode .press-link {
+    color: #e0e0e0;
+}
+
+.dark-mode .press-link::after {
+    border-color: #e0e0e0;
+}
+
+/* 업무분야 아이콘 흰색 반전 (필요 시) */
+.dark-mode .field-item::before {
+    filter: brightness(0) invert(1);
+}
+
+
+/* 다크모드 스타일 (시스템 설정 대응 또는 .dark-mode 클래스 사용 시) */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #121212;
+        --card-bg: #1e1e1e;
+        --text-main: #e0e0e0;
+        --text-sub: #a0a0a0;
+        --border-color: #333;
+    }
+
+    body {
+        background-color: var(--bg-color);
+        color: var(--text-main);
+    }
+
+    /* 업무사례 섹션 */
+    section.case {
+        background-color: var(--bg-color);
+    }
+
+    .case-item {
+        border-color: var(--main-color);
+        /* 포인트 컬러 유지 또는 변경 */
+        background: var(--card-bg);
+    }
+
+    .case-description {
+        color: var(--text-main);
+    }
+
+    /* 언론보도 섹션 */
+    section.press {
+        background-color: #1a1a1a;
+        /* 살짝 밝은 블랙 */
+    }
+
+    .press-list,
+    .press-list li {
+        border-color: #444;
+    }
+
+    .press-link {
+        color: var(--text-main);
+    }
+
+    .press-link:hover {
+        background-color: #252525;
+    }
+
+    .press-link::after {
+        border-color: var(--text-main);
+    }
+
+    /* 업무분야 섹션 */
+    .field-item {
+        background: #2c3e50;
+        /* 다크모드에 어울리는 톤다운된 블루그린 */
+    }
+
+    .field-item.blue {
+        background: #1a5f7a;
+        /* 톤다운된 블루 */
+    }
+}

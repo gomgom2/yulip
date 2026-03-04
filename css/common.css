@@ -96,7 +96,8 @@ body.dark-hero .site-header {
 }
 
 .nav-wrap .logo a {
-    font-family: GounBatang, sans-serif;
+    /* font-family: GounBatang, sans-serif; */
+    font-weight: 800;
     font-size: 1.6rem;
     white-space: nowrap;
 }
@@ -332,4 +333,67 @@ ul.submenu {
     .footer-contact {
         text-align: left;
     }
+}
+
+/* --- 공통 요소(헤더, 푸터) 다크모드 스타일 --- */
+
+/* 1. 헤더 기본 상태 */
+body.dark-mode .site-header {
+    background-color: #121212;
+    color: #e0e0e0;
+    border-bottom-color: #333;
+}
+
+/* 2. 메가 메뉴(서브메뉴) 배경 및 구분선 */
+body.dark-mode .site-header::after {
+    background: #1e1e1e;
+    /* 약간 밝은 블랙으로 레이어 구분 */
+}
+
+body.dark-mode .site-header.mega-open::after {
+    border-bottom-color: #333;
+}
+
+/* 3. 서브메뉴 글자색 */
+body.dark-mode .submenu a {
+    color: #aaa;
+}
+
+body.dark-mode .submenu a:hover {
+    color: var(--main-color);
+    /* 포인트 컬러 유지 */
+}
+
+/* 4. 스크롤 또는 마우스 오버 시(scrolled, mega-open) 배경 유지 */
+body.dark-mode .site-header.scrolled,
+body.dark-mode .site-header.mega-open {
+    background-color: #1e1e1e !important;
+    color: #fff !important;
+}
+
+/* 5. 모바일 드로어(메뉴창) */
+@media (max-width: 1024px) {
+    body.dark-mode .drawer {
+        background: #121212;
+        color: #e0e0e0;
+    }
+
+    body.dark-mode .mnav-list a {
+        color: #ccc;
+    }
+
+    body.dark-mode .drawer-overlay {
+        background: rgba(0, 0, 0, 0.8);
+    }
+}
+
+/* 6. 푸터(Footer) */
+body.dark-mode .site-footer {
+    background-color: #121212;
+    border-top-color: #333;
+    color: #888;
+}
+
+body.dark-mode .footer-wrap {
+    color: #888;
 }
