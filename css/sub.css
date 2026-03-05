@@ -668,7 +668,7 @@ main {
 .institute-text {
     background-color: #43494F;
     color: #fff;
-    padding: 2rem 2rem 3rem;
+    padding: 2rem 2rem 2rem;
 }
 
 .institute-text h4 {
@@ -690,7 +690,7 @@ main {
 
 .institute-text p {
     margin-top: 0.1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-size: 1.1rem;
     line-height: 1.5;
 }
